@@ -1,0 +1,46 @@
+.cardDeal{
+    padding: 50px 100px;
+    margin-top: 100px;
+    .cardDeal-contain{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .card-left{
+            h2{
+                font-size: 48px;
+                font-weight: 600;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 35px;
+                }
+            }
+            p{
+                max-width: 70%;
+                color: rgba(255, 255, 255, 0.406);
+            }
+        }
+        .card-right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .cardDeal-contain{
+            flex-direction: column;
+            .card-left{
+                p{
+                    max-width: 100%;
+                }
+            }
+            img{
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .cardDeal{
+        padding: 20px 50px;
+    }
+}

@@ -1,0 +1,46 @@
+.business{
+    padding: 50px 100px;
+    margin-top: 100px;
+    .business-contain{
+        display: flex;
+        gap: 50px;
+        .business-left{
+            flex: 1;
+            h2{
+                font-size: 48px;
+                font-weight: 600;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 35px;
+                }
+            }
+            p{
+                color: rgba(255, 255, 255, 0.406);
+            }
+        }
+        .business-right{
+            flex: 1;
+            .ri{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                img{
+                    background-color: rgba(9, 151, 124, 0.1);
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 20px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .business{
+        padding: 20px 50px;
+        .business-contain{
+            flex-direction: column;
+        }
+    }
+}
