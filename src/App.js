@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonal} from "./components"
+import {Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonal, CTA, Footer} from "./components"
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
       <Business/>
       <Billing/>
       <CardDeal/>
-      {/* <Testimonal/> */}
+      <Testimonal/>
+      <CTA/>
+      <Footer/>
     </div>
   );
 }

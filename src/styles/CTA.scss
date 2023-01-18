@@ -1,0 +1,38 @@
+.cta{
+    padding: 50px 100px;
+    .cta-contain{
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+        // backdrop-filter: blur(5px);
+        padding: 50px 100px;
+        /* Note: backdrop-filter has minimal browser support */
+        @media screen and (max-width: 800px) {
+            // display: block;
+            padding: 10px 20px;
+        }
+        border-radius: 20px;
+        .left{
+            width: 100%;
+            h2{
+                font-size: 48px;
+                font-weight: 600;
+                margin: 0px;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 35px;
+                }
+            }
+            p{
+                color: rgba(255, 255, 255, 0.406);
+            }
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        padding: 20px 50px;
+    }
+}
